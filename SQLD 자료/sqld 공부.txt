@@ -1,0 +1,25 @@
+sqld
+깡마 - 유튜브 요약 강의 (모르는것은 검색하면서 공부)
+https://www.youtube.com/watch?v=PC3ypt_VGWI
+
+
+나머지 노랭이책 한번 쭉 풀고 다 풀면 기출문제로 넘어가기
+(제 3장은 안해도된다)
+
+
+데이터 전문가 포럼 네이버카페 가입하기
+
+
+문제풀때 시간 부족하면 모르는것은 빨리 넘기고 아는것만 먼저 쭉풀기
+뒤에서부터 푸는거 추천
+
+
+
+기출문제
+https://yunamom.tistory.com/category/IT%EC%9E%90%EA%B2%A9%EC%A6%9D%20%EA%B3%B5%EB%B6%80/SQLD%20%EA%B8%B0%EC%B6%9C%EB%AC%B8%EC%A0%9C
+
+
+데이터전문가포럼카페
+https://m.cafe.naver.com/ca-fe/sqlpd
+
+

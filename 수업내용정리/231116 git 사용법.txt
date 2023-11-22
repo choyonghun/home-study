@@ -1,0 +1,14 @@
+github에 만든 repository 내컴퓨터로 clone 연동 시킨법
+
+git bash -->  ~/git/ 상태로 만들고 -->  git clone "github repository 주소"  --> 엔터 -->  그 위치에 repo.clone 파일이 저장됨
+
+이곳에서 add, commit, pull, push를 해주면 된다.
+
+add  ->  stage에 올려두기만 한것
+commit  ->  stage에 있는 애들을 github에 올리기전에 수정사항 적어주는 것
+pull  ->  github repo 에 올려두기
+push  ->  github repo 에 누군가 수정해둔 파일 내 컴퓨터로 가져오기
+
+
+~/git 만드는법
+pwd로 위치 찾고 ls로 이동파일 찾은 뒤에 cd로 User/user/git들어가면된다.

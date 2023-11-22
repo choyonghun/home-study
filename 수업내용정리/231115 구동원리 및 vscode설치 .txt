@@ -1,0 +1,61 @@
+UML이란 Unified Modeling Language의 약자로 1997년 OMG(Object Management Group)에서 표준으로 채택한 통합모델링언어 입니다. 
+즉, 모델을 만드는 표준언어인 것입니다.
+
+stereotype -> 구분표시할때 사용 (고정 관념, 정형화된 생각[이미지])
+
+instruction set = 기계어
+명령어 집합(영어: instruction set) 또는 명령어 집합 구조(영어: Instruction set architecture, ISA)는
+마이크로프로세서가 인식해서 기능을 이해하고 실행할 수 있는 기계어 명령어를 말한다.
+
+
+compiler -> 프로그래밍언어로 쓰여있는 문서를 다른 프로그래밍언어로 번역해주는 프로그램
+
+번역되기 전 원래 언어 -> source
+bytecode (p-code) -> 기계어와 흡사한 구조로 된 중간형태의 명령어 (진짜 기계어가 아니다)
+
+
+mp4 파일을 열기 위해서 mp4 플레이어를 사용해 실행한다
+.class 파일을 열기위해 bytecode player(player=interpreter=engine=viewer 다 같은말이다)을 사용해서 .class파일을 실행한다.
+
+
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+JAVA JDK 설치 및 설정
+
+1. JDK 설치
+https://www.oracle.com/java/technologies/downloads/#jdk21-windows
+
+
+2. 
+
+CLI 를 다룰줄 알아야 한다.
+Commend Line Interface
+
+
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ JAVA JDK11 사용하고 싶으면 환경변수 JDK 11로 다시 설정해야함
+C:\Program Files\Java  에 JDK 11 있음
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+OS의 핵심기능
+cpu/ram/device 관리
+process관리, 스케쥴링
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+
+vscode 설치
+debugger for java
+korea language 설치해주기
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+Run|Debug 지우는법
+설정에 code lens 체크 지우기
+
