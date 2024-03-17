@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <style>
+    #chat-container {
+        width: 400px;
+        height: 300px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: scroll;
+    }
+    #chat-message {
+        margin-top: 10px;
+    }
+  </style>
+
+</head>
+<body onload="connect()">
+<h2>Chat</h2>
+<div id="chat-container"></div>
+<div id="chat-message">
+  <input type="text" id="sender" placeholder="Your Name">
+  <input type="text" id="content" placeholder="Type your message">
+  <button onclick="sendMessage()">Send</button>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/stompjs"></script>
+<script>
+  var stompClient = null;
+
+  function connect() {
+      var socket = new SockJS('/chat');
+      stompClient = Stomp.over(socket);
+      stompClient.connect({}, function(frame) {
+          console.log('Connected: ' + frame);
+          stompClient.subscribe('/topic/messages', function(response) {
+              showMessage(JSON.parse(response.body));
+          });
+      });
+  }
+
+  function disconnect() {
+      if (stompClient !== null) {
+          stompClient.disconnect();
+      }
+      console.log("Disconnected");
+  }
+
+function sendMessage() {
+    var sender = $("#sender").val();
+    var content = $("#content").val();
+    var message = {
+        sender: sender,
+        content: content
+    };
+    // 웹소켓으로 메시지를 전송합니다.
+    stompClient.send("/app/chat", {}, JSON.stringify(message));
+}
+
+$(document).ready(function() {
+    // 전송 버튼 클릭 시 sendMessage 함수 호출
+    $("#sendButton").click(function() {
+        sendMessage();
+        // 메시지를 전송한 후에는 입력창을 비웁니다.
+        $("#content").val('');
+    });
+});
+
+  function showMessage(message) {
+      var chatMessage = "<div><strong>" + message.sender + ": </strong>" + message.content + "</div>";
+      $("#chat-container").append(chatMessage);
+      // 스크롤을 맨 아래로 이동
+      $("#chat-container").scrollTop($("#chat-container")[0].scrollHeight);
+  }
+</script>
+
+</html>
